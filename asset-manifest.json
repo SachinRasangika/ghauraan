@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ghauraan/static/css/main.d48f97b6.css",
+    "main.js": "/ghauraan/static/js/main.173be0bd.js",
+    "static/js/511.b6702cb0.chunk.js": "/ghauraan/static/js/511.b6702cb0.chunk.js",
+    "index.html": "/ghauraan/index.html",
+    "main.d48f97b6.css.map": "/ghauraan/static/css/main.d48f97b6.css.map",
+    "main.173be0bd.js.map": "/ghauraan/static/js/main.173be0bd.js.map",
+    "511.b6702cb0.chunk.js.map": "/ghauraan/static/js/511.b6702cb0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d48f97b6.css",
+    "static/js/main.173be0bd.js"
+  ]
+}
