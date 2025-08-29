@@ -11,19 +11,19 @@ const MarketingSection = () => {
   const images = [
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/b49ebee3952b6de5dc58e55d1883480205ec414d?width=660",
-      alt: "Lithuanian cuisine and dining"
+      alt: "Sri Lankan cuisine and dining"
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/f27c569d58090986e429cb883a87c559f0a1493b?width=660",
-      alt: "Eco tourism in Lithuania"
+      alt: "Eco tourism in Sri Lanka"
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/2ca9c6fab58bef7f32bdf88c190b51a7f81be8f6?width=660",
-      alt: "Cultural heritage sites"
+      alt: "Cultural heritage sites of Sri Lanka"
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/22131ffc59edbdf1c13bc304edcb409c237e00fa?width=660",
-      alt: "Seasonal activities in Lithuania"
+      alt: "Seasonal activities in Sri Lanka"
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/432f1ccc3052dee5af94a5e297d02be6c1e03c22?width=660",
@@ -80,7 +80,7 @@ const MarketingSection = () => {
             <div className="marketing-info">
               <p className="marketing-description">
                 Representational materials about travel opportunities in<br />
-                Lithuania and more.
+                Sri Lanka and more.
               </p>
               <a href="#" className="marketing-cta">
                 Visit our media center

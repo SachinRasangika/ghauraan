@@ -10,23 +10,23 @@ const ExperiencesSection = () => {
   const activities = [
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/c71c8beb418322e28fefb15399036b3568e1902e?width=901",
-      title: "Snow Baths and Hot Saunas in Lithuania",
-      alt: "Traditional Lithuanian sauna experience"
+      title: "Tea Plantation Tours in Nuwara Eliya",
+      alt: "Tea plantation tours in Nuwara Eliya, Sri Lanka"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/f878dba6706b39e4c539d0001d9b9ae130961d66?width=901",
-      title: "Hitting the Piste or Exploring Lithuania's Winter Landscapes",
-      alt: "Winter sports and landscapes in Lithuania"
+      title: "Surfing in Arugam Bay",
+      alt: "Surfing experience in Arugam Bay, Sri Lanka"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/b39a391ff77e30788f2aaaf8561e0114466fab8f?width=901",
-      title: "MO Museum",
-      alt: "Modern art museum in Lithuania"
+      title: "Sigiriya Rock Fortress",
+      alt: "Sigiriya Rock Fortress in Sri Lanka"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/f3456b5f83b34190d45b8078d37237c636bfd730?width=901",
-      title: "Old Craft Workshop",
-      alt: "Traditional Lithuanian crafts and workshops"
+      title: "Ayurveda Wellness Retreat",
+      alt: "Ayurveda wellness retreat in Sri Lanka"
     }
   ];
 
@@ -77,10 +77,10 @@ const ExperiencesSection = () => {
               experiences
             </h2>
             <p className="experiences-description">
-              If you decide to spend at least a week in Lithuania, you can do a lot.<br />
-              Select the vehicle of your liking – whether it's a bike, motorcycle, car,<br />
-              bus or train – and set out to explore Lithuania's ethnographic regions.<br />
-              And they are all very different.
+              If you spend at least a week in Sri Lanka, you can do a lot.<br />
+              Ride the scenic train through the Hill Country, drive along the southern coast,<br />
+              or go on safari in our national parks like Yala and Udawalawe.<br />
+              Each region offers something unique.
             </p>
             <a href="#" className="experiences-cta">
               Read more
@@ -93,7 +93,7 @@ const ExperiencesSection = () => {
           <div className="map-container">
             <img 
               src="https://api.builder.io/api/v1/image/assets/TEMP/ed4302d48046790f4ec6196b993343609b4cbeb4?width=1392"
-              alt="Lithuania regions map"
+              alt="Sri Lanka regions map"
               className="lithuania-map"
             />
             
@@ -137,10 +137,10 @@ const ExperiencesSection = () => {
         
         <div className="experiences-container">
           <div className="lithuania-header">
-            <h2 className="lithuania-title">Your own Lithuania</h2>
+            <h2 className="lithuania-title">Your own Sri Lanka</h2>
             <p className="lithuania-description">
               From vibrant cities filled with historical buildings to<br />
-              peaceful nature – Lithuania has something for everyone.
+              peaceful nature — Sri Lanka has something for everyone.
             </p>
           </div>
 

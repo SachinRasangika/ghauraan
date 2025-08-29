@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="footer-grid">
             {/* Why Lithuania */}
             <div className="footer-column">
-              <h3 className="footer-column-title">Why Lithuania</h3>
+              <h3 className="footer-column-title">Why Sri Lanka</h3>
               <ul className="footer-links">
-                <li><a href="#" className="footer-link">Getting to lithuania</a></li>
+                <li><a href="#" className="footer-link">Getting to Sri Lanka</a></li>
                 <li><a href="#" className="footer-link">Getting around</a></li>
                 <li><a href="#" className="footer-link">Activities and sights</a></li>
                 <li><a href="#" className="footer-link">The most interesting facts</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
                 <li><a href="#" className="footer-link">Nature</a></li>
                 <li><a href="#" className="footer-link">Undiscovered gems</a></li>
                 <li><a href="#" className="footer-link">History, culture, art</a></li>
-                <li><a href="#" className="footer-link">Lithuanian cuisine</a></li>
+                <li><a href="#" className="footer-link">Sri Lankan cuisine</a></li>
                 <li><a href="#" className="footer-link">Ecotourism</a></li>
                 <li><a href="#" className="footer-link">Seasonal highlights</a></li>
               </ul>
@@ -49,7 +49,7 @@ const Footer = () => {
               <h3 className="footer-column-title">Media and marketing</h3>
               <ul className="footer-links">
                 <li><a href="#" className="footer-link">Media kit</a></li>
-                <li><a href="#" className="footer-link">Materials for presenting Lithuania</a></li>
+                <li><a href="#" className="footer-link">Materials for presenting Sri Lanka</a></li>
                 <li><a href="#" className="footer-link">Brandbook</a></li>
                 <li><a href="#" className="footer-link">Marketing</a></li>
               </ul>
@@ -68,7 +68,7 @@ const Footer = () => {
 
             {/* About Lithuania Travel */}
             <div className="footer-column">
-              <h3 className="footer-column-title">About Lithuania Travel</h3>
+              <h3 className="footer-column-title">About Sri Lanka Travel</h3>
               <ul className="footer-links">
                 <li><a href="#" className="footer-link">Who we are?</a></li>
               </ul>
@@ -83,7 +83,7 @@ const Footer = () => {
             <div className="partner-logo">
               <img 
                 src="https://api.builder.io/api/v1/image/assets/TEMP/3ef0ed8ff7d2ee038336faf759ba9035f45620c8?width=216" 
-                alt="Lithuania Government Logo" 
+                alt="Sri Lanka Tourism Logo" 
                 className="partner-logo-img"
               />
             </div>
@@ -139,7 +139,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <div className="footer-copyright">
-            <p>All Rights Reserved © Lithuania Travel</p>
+            <p>All Rights Reserved © Sri Lanka Travel</p>
           </div>
           <div className="footer-bottom-links">
             <a href="#" className="footer-bottom-link">Contacts</a>

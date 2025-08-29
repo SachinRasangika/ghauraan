@@ -8,43 +8,43 @@ const ProductsSection = () => {
     'Cities': {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/5f5e0d6870669c8b5a33409d8014b089dc035243?width=3532",
       title: "Major cities",
-      description: "Lithuanian cities are characterised not only by layers of history, but also by incredible variety. From the bustling streets and squares of the capital to the modernist heritage of Kaunas, and the prominent Germanic heritage of Klaipėda – Lithuanian cities have something for everyone!",
+      description: "Sri Lankan cities offer a rich mix of heritage and modern life. From the bustling capital Colombo to the sacred city of Kandy and the colonial charm of Galle, there is something for everyone!",
       buttonText: "More information"
     },
     'Nature': {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/f27c569d58090986e429cb883a87c559f0a1493b?width=3532",
       title: "Natural wonders",
-      description: "Lithuania's diverse landscapes offer breathtaking natural experiences. From the pristine beaches of the Curonian Spit to ancient forests and tranquil lakes, discover the untouched beauty that makes Lithuania a nature lover's paradise.",
+      description: "Sri Lanka's diverse landscapes offer breathtaking experiences—from golden beaches and coral reefs to misty tea plantations and rainforest waterfalls. Discover the natural beauty that makes Sri Lanka a nature lover's paradise.",
       buttonText: "Explore nature"
     },
     'Undiscovered gems': {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/2ca9c6fab58bef7f32bdf88c190b51a7f81be8f6?width=3532",
       title: "Hidden treasures",
-      description: "Venture off the beaten path to discover Lithuania's best-kept secrets. From charming medieval villages to mysterious hill forts and local artisan workshops, these hidden gems offer authentic experiences away from the crowds.",
+      description: "Venture off the beaten path to discover Sri Lanka's best‑kept secrets. From hidden mountain temples to quiet coastal villages and local artisan workshops, these gems offer authentic experiences away from the crowds.",
       buttonText: "Discover gems"
     },
     'History, culture, art': {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/b39a391ff77e30788f2aaaf8561e0114466fab8f?width=3532",
       title: "Cultural heritage",
-      description: "Immerse yourself in Lithuania's rich cultural tapestry. Explore medieval castles, UNESCO World Heritage sites, contemporary art galleries, and traditional craft workshops that showcase centuries of artistic excellence.",
+      description: "Immerse yourself in Sri Lanka's rich cultural tapestry—ancient cities, UNESCO World Heritage sites, living temples, and contemporary art that showcase centuries of tradition and creativity.",
       buttonText: "Learn more"
     },
     'Lithuanian cuisine': {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/b49ebee3952b6de5dc58e55d1883480205ec414d?width=3532",
       title: "Culinary traditions",
-      description: "Savor the authentic flavors of Lithuania through traditional dishes and modern interpretations. From hearty cepelinai to delicate šakotis cake, experience the country's culinary heritage in cozy restaurants and local markets.",
-      buttonText: "Taste Lithuania"
+      description: "Savor the authentic flavors of Sri Lanka—from fragrant rice and curry to hoppers, kottu, and seafood fresh from the Indian Ocean. Experience our culinary heritage in cozy eateries and bustling markets.",
+      buttonText: "Taste Sri Lanka"
     },
     'Ecotourism': {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/22131ffc59edbdf1c13bc304edcb409c237e00fa?width=3532",
       title: "Sustainable travel",
-      description: "Experience Lithuania's commitment to environmental conservation through eco-friendly activities. Explore national parks, participate in wildlife watching, and stay in sustainable accommodations that protect our natural heritage.",
+      description: "Experience Sri Lanka's commitment to conservation through eco‑friendly travel. Explore national parks, watch wildlife like leopards and elephants, and stay in sustainable accommodations that protect our natural heritage.",
       buttonText: "Go green"
     },
     'Seasonal highlights': {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/432f1ccc3052dee5af94a5e297d02be6c1e03c22?width=3532",
       title: "Year-round experiences",
-      description: "Lithuania offers unique experiences in every season. From summer festivals and beach activities to winter sports and cozy holiday markets, discover activities tailored to each time of year.",
+      description: "Sri Lanka offers unique experiences year‑round. From East and South coast beach seasons to Hill Country hikes and cultural festivals, there's always somewhere perfect to explore.",
       buttonText: "See seasons"
     }
   };
@@ -68,7 +68,7 @@ const ProductsSection = () => {
           <h2 className="products-title">Our products</h2>
           <div className="products-info">
             <p className="products-description">
-              From health to tech - discover our tourism products.
+              From beaches to mountains — discover our travel experiences.
             </p>
             <a href="#" className="products-cta">
               See all
@@ -104,7 +104,7 @@ const ProductsSection = () => {
             <div className="content-image-container">
               <img 
                 src={currentContent.image}
-                alt={`${activeTab} in Lithuania`}
+                alt={`${activeTab} in Sri Lanka`}
                 className="content-image"
               />
               <div className="info-overlay">

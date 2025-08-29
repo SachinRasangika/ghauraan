@@ -7,23 +7,23 @@ const VisitSection = () => {
   const experiences = [
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/90baf4a6bba1a72e713dcca511a79f2121aa2403?width=901",
-      title: "Science Island",
-      alt: "Science Island in Lithuania"
+      title: "Ella Nine Arch Bridge",
+      alt: "Ella Nine Arch Bridge in Sri Lanka"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/b54a43831736f7c956354aa0288bfb4841bb4670?width=901",
-      title: "Meet a Local",
-      alt: "Meet a Local experience in Lithuania"
+      title: "Meet a Local in Galle",
+      alt: "Meet a local experience in Galle, Sri Lanka"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/22c3f339eb6de8f36a0bd47fd387c18934a6023c?width=901",
-      title: "White bridge square",
-      alt: "White bridge square in Lithuania"
+      title: "Mirissa Whale Watching",
+      alt: "Whale watching in Mirissa, Sri Lanka"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/1dfcc36cc90fe84844b60d0d16618a7413edaae3?width=901",
-      title: "Art deco museum",
-      alt: "Art deco museum in Lithuania"
+      title: "Colombo Art Deco",
+      alt: "Colombo Art Deco architecture in Sri Lanka"
     }
   ];
 
@@ -49,7 +49,7 @@ const VisitSection = () => {
         <div className="visit-header">
           <h2 className="visit-title">More than a visit</h2>
           <p className="visit-description">
-            There are many reasons to choose Lithuania, but here<br />
+            There are many reasons to choose Sri Lanka, but here<br />
             are some of the most essential
           </p>
         </div>
