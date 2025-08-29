@@ -53,7 +53,7 @@ body {
   height: 100%;
   display: flex;
   align-items: flex-end;
-  padding: 0;
+  padding: 160px 0 0 0;
 }
 
 .hero-content-card {
@@ -217,7 +217,11 @@ body {
   .hero-section {
     min-height: 100vh;
   }
-  
+
+  .hero-container {
+    padding: 140px 0 0 0;
+  }
+
   .hero-content-card {
     width: 95%;
     height: auto;
@@ -246,7 +250,7 @@ body {
 @media (max-width: 768px) {
   .hero-container {
     align-items: center;
-    padding: 20px;
+    padding: 140px 20px 20px;
   }
   
   .hero-content-card {
@@ -287,6 +291,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .hero-container {
+    padding: 120px 10px 10px;
+  }
+
   .hero-content-card {
     padding: 30px 20px;
     margin: 10px;

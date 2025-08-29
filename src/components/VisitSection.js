@@ -8,22 +8,26 @@ const VisitSection = () => {
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/90baf4a6bba1a72e713dcca511a79f2121aa2403?width=901",
       title: "Ella Nine Arch Bridge",
-      alt: "Ella Nine Arch Bridge in Sri Lanka"
+      alt: "Ella Nine Arch Bridge in Sri Lanka",
+      details: "Take the scenic train and capture iconic views across the lush valley."
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/b54a43831736f7c956354aa0288bfb4841bb4670?width=901",
       title: "Meet a Local in Galle",
-      alt: "Meet a local experience in Galle, Sri Lanka"
+      alt: "Meet a local experience in Galle, Sri Lanka",
+      details: "Stroll the Dutch Fort and hear stories from generations of coastal life."
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/22c3f339eb6de8f36a0bd47fd387c18934a6023c?width=901",
       title: "Mirissa Whale Watching",
-      alt: "Whale watching in Mirissa, Sri Lanka"
+      alt: "Whale watching in Mirissa, Sri Lanka",
+      details: "Spot blue whales and dolphins with responsible operators at sunrise."
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/1dfcc36cc90fe84844b60d0d16618a7413edaae3?width=901",
       title: "Colombo Art Deco",
-      alt: "Colombo Art Deco architecture in Sri Lanka"
+      alt: "Colombo Art Deco architecture in Sri Lanka",
+      details: "Discover tropical modernism and Art Deco gems on a guided city walk."
     }
   ];
 
@@ -71,6 +75,10 @@ const VisitSection = () => {
                   />
                   <div className="experience-overlay">
                     <h3 className="experience-title">{experience.title}</h3>
+                    <p className="experience-details">{experience.details}</p>
+                    <a href="#" className="experience-cta" aria-label={`Show more about ${experience.title}`}>
+                      Show more
+                    </a>
                   </div>
                 </div>
               ))}

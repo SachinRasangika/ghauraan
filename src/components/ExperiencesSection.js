@@ -11,22 +11,26 @@ const ExperiencesSection = () => {
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/c71c8beb418322e28fefb15399036b3568e1902e?width=901",
       title: "Tea Plantation Tours in Nuwara Eliya",
-      alt: "Tea plantation tours in Nuwara Eliya, Sri Lanka"
+      alt: "Tea plantation tours in Nuwara Eliya, Sri Lanka",
+      details: "Wander through emerald tea fields, meet planters, and sip fresh Ceylon tea at source."
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/f878dba6706b39e4c539d0001d9b9ae130961d66?width=901",
       title: "Surfing in Arugam Bay",
-      alt: "Surfing experience in Arugam Bay, Sri Lanka"
+      alt: "Surfing experience in Arugam Bay, Sri Lanka",
+      details: "Catch world‑class breaks from May to October with laid‑back beach vibes and cafes."
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/b39a391ff77e30788f2aaaf8561e0114466fab8f?width=901",
       title: "Sigiriya Rock Fortress",
-      alt: "Sigiriya Rock Fortress in Sri Lanka"
+      alt: "Sigiriya Rock Fortress in Sri Lanka",
+      details: "Climb the Lion Rock to ancient frescoes and panoramic views over the Cultural Triangle."
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/f3456b5f83b34190d45b8078d37237c636bfd730?width=901",
       title: "Ayurveda Wellness Retreat",
-      alt: "Ayurveda wellness retreat in Sri Lanka"
+      alt: "Ayurveda wellness retreat in Sri Lanka",
+      details: "Rejuvenate with traditional therapies, yoga, and healthy cuisine by the ocean."
     }
   ];
 
@@ -170,6 +174,10 @@ const ExperiencesSection = () => {
                     />
                     <div className="activity-overlay">
                       <h3 className="activity-title">{activity.title}</h3>
+                      <p className="activity-details">{activity.details}</p>
+                      <a href="#" className="activity-cta" aria-label={`Show more about ${activity.title}`}>
+                        Show more
+                      </a>
                     </div>
                   </div>
                 ))}
@@ -194,7 +202,7 @@ const ExperiencesSection = () => {
                   onClick={handlePrev}
                   disabled={currentSlide === 0}
                   aria-label="Previous slide"
-                  style={{ minHeight: '48px', minWidth: '48px' }}
+                  
                 >
                   prev
                 </button>
@@ -203,7 +211,7 @@ const ExperiencesSection = () => {
                   onClick={handleNext}
                   disabled={currentSlide === totalSlides - 1}
                   aria-label="Next slide"
-                  style={{ minHeight: '48px', minWidth: '48px' }}
+                  
                 >
                   next
                 </button>

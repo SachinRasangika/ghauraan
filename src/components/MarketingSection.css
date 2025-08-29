@@ -106,6 +106,9 @@
 .gallery-item {
   flex: 0 0 330px;
   height: 186px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .gallery-item img {
@@ -113,6 +116,61 @@
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img,
+.gallery-item:focus-within img {
+  transform: scale(1.02);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(29,36,48,0.6) 100%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.gallery-item:hover .gallery-overlay,
+.gallery-item:focus-within .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay-title {
+  color: #fff;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0;
+}
+
+.gallery-overlay-cta {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 18px;
+  border: 1px solid #336361;
+  background: #336361;
+  color: #fff;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-overlay-cta:hover {
+  background: #2a524f;
+  transform: translateY(-1px);
 }
 
 /* Gallery Controls */

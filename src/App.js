@@ -16,10 +16,9 @@ function App() {
         Skip to main content
       </a>
 
-      <Navbar />
-      
       {/* Hero Section */}
       <main id="main-content" className="hero-section">
+        <Navbar />
         <div className="hero-background">
           <ResponsiveImage
             src="https://api.builder.io/api/v1/image/assets/TEMP/74164a726414b2ec5aef4bc3ab2a81a748b237ed?width=2880"

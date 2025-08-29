@@ -256,19 +256,18 @@
   border-radius: 0 32px 0 0;
   padding: 24px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 10px;
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.25s ease;
 }
 
-/* Different overlay heights based on content */
-.activity-card:nth-child(1) .activity-overlay,
-.activity-card:nth-child(2) .activity-overlay {
-  height: 115px;
-}
-
-.activity-card:nth-child(3) .activity-overlay,
-.activity-card:nth-child(4) .activity-overlay {
-  height: 82px;
+.activity-card:hover .activity-overlay,
+.activity-card:focus-within .activity-overlay {
+  height: 200px;
 }
 
 .activity-title {
@@ -279,6 +278,43 @@
   line-height: 33.6px;
   margin: 0;
   max-width: 326px;
+}
+
+.activity-details {
+  color: #1d2430;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.activity-card:hover .activity-details,
+.activity-card:focus-within .activity-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.activity-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 18px;
+  border: 1px solid #1d2430;
+  background: rgba(255,255,255,0.5);
+  color: #1d2430;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.activity-cta:hover {
+  background: rgba(255,255,255,0.7);
+  transform: translateY(-1px);
 }
 
 /* Lithuania Controls - FIXED */

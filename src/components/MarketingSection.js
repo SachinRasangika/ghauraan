@@ -114,6 +114,12 @@ const MarketingSection = () => {
                       aspectRatio="16/9"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
+                    <div className="gallery-overlay">
+                      <h3 className="gallery-overlay-title">{image.alt}</h3>
+                      <a href="#" className="gallery-overlay-cta" aria-label={`Show more about ${image.alt}`}>
+                        Show more
+                      </a>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -137,7 +143,7 @@ const MarketingSection = () => {
                   onClick={handlePrev}
                   disabled={currentSlide === 0}
                   aria-label="Previous slide"
-                  style={{ minHeight: '48px', minWidth: '48px' }}
+                  
                 >
                   prev
                 </button>
@@ -146,7 +152,7 @@ const MarketingSection = () => {
                   onClick={handleNext}
                   disabled={currentSlide === totalSlides - 1}
                   aria-label="Next slide"
-                  style={{ minHeight: '48px', minWidth: '48px' }}
+                  
                 >
                   next
                 </button>
