@@ -1,0 +1,507 @@
+/* Footer Styles */
+.footer {
+  width: 100%;
+  background: #003C3A;
+  border-radius: 48px 48px 0 0;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1416px;
+  margin: 0 auto;
+  padding: 48px 48px 20px 48px;
+}
+
+.footer-main {
+  width: 100%;
+}
+
+/* Footer Grid Layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-column-title {
+  color: #fff;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0 0 12px 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-link {
+  color: #9EA7B5;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+/* Footer Separator */
+.footer-separator {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.20);
+  opacity: 0.25;
+  margin: 48px 0;
+}
+
+/* Partner Logos Section */
+.footer-partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo-img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
+.partner-logo.best-travel-planet .partner-logo-img {
+  height: 120px;
+  width: 120px;
+}
+
+.trip-logo {
+  height: 25px;
+  width: 157px;
+}
+
+/* Social Media Icons */
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 40px;
+  border-radius: 16px;
+  border: 1px solid #E1B9FF;
+  background: #E1B9FF;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: #d4a3ff;
+  border-color: #d4a3ff;
+  transform: translateY(-1px);
+}
+
+.social-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  gap: 24px;
+}
+
+.footer-copyright p {
+  color: rgba(255, 255, 255, 0.60);
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-link {
+  color: #9EA7B5;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-decoration: none;
+  padding: 0 8px;
+  border-radius: 18px;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-link:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .footer-container {
+    max-width: 1200px;
+    padding: 40px 40px 20px 40px;
+  }
+  
+  .footer-grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-container {
+    padding: 40px 32px 20px 32px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  
+  .footer-partners {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  .footer-social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    border-radius: 32px 32px 0 0;
+    margin-top: 80px;
+  }
+  
+  .footer-container {
+    padding: 32px 24px 20px 24px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-column-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .footer-link {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .footer-separator {
+    margin: 32px 0;
+  }
+  
+  .footer-partners {
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .partner-logo-img {
+    height: 48px;
+  }
+  
+  .partner-logo.best-travel-planet .partner-logo-img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .trip-logo {
+    height: 20px;
+    width: 125px;
+  }
+  
+  .footer-social {
+    gap: 12px;
+  }
+  
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .social-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .footer-bottom-links {
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .footer-bottom-link {
+    font-size: 13px;
+    padding: 0 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    border-radius: 24px 24px 0 0;
+    margin-top: 60px;
+  }
+  
+  .footer-container {
+    padding: 24px 20px 16px 20px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .footer-column-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-link {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  
+  .footer-links {
+    gap: 12px;
+  }
+  
+  .footer-separator {
+    margin: 24px 0;
+  }
+  
+  .footer-partners {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .partner-logo-img {
+    height: 40px;
+  }
+  
+  .partner-logo.best-travel-planet .partner-logo-img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .trip-logo {
+    height: 18px;
+    width: 110px;
+  }
+  
+  .footer-social {
+    gap: 10px;
+    margin-top: 16px;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+  }
+  
+  .social-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .footer-bottom {
+    gap: 12px;
+  }
+  
+  .footer-copyright p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .footer-bottom-links {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom-link {
+    font-size: 12px;
+    padding: 0 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    margin-top: 40px;
+  }
+  
+  .footer-container {
+    padding: 20px 16px 16px 16px;
+  }
+  
+  .footer-grid {
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .footer-column-title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .footer-link {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  
+  .footer-links {
+    gap: 10px;
+  }
+  
+  .footer-separator {
+    margin: 20px 0;
+  }
+  
+  .footer-partners {
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .partner-logo-img {
+    height: 32px;
+  }
+  
+  .partner-logo.best-travel-planet .partner-logo-img {
+    height: 64px;
+    width: 64px;
+  }
+  
+  .trip-logo {
+    height: 16px;
+    width: 94px;
+  }
+  
+  .footer-social {
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  .social-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 10px;
+  }
+  
+  .social-icon svg {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .footer-bottom {
+    gap: 10px;
+  }
+  
+  .footer-copyright p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  .footer-bottom-links {
+    gap: 6px;
+  }
+  
+  .footer-bottom-link {
+    font-size: 11px;
+    padding: 0 3px;
+  }
+}
+
+/* Focus styles for accessibility */
+.footer a:focus,
+.footer button:focus {
+  outline: 2px solid #E1B9FF;
+  outline-offset: 2px;
+}
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+  .footer-link {
+    color: #BDC3CC;
+  }
+  
+  .footer-link:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom-link {
+    color: #BDC3CC;
+  }
+  
+  .footer-bottom-link:hover {
+    color: #fff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .footer-link,
+  .footer-bottom-link,
+  .social-icon {
+    transition: none;
+  }
+  
+  .social-icon:hover {
+    transform: none;
+  }
+}

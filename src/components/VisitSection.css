@@ -1,0 +1,434 @@
+/* Visit Section - More than a visit */
+.visit-section {
+  display: flex;
+  width: 100%;
+  height: 836px;
+  padding: 80px 240px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: relative;
+}
+
+.visit-container {
+  width: 1440px;
+  height: 676px;
+  position: relative;
+}
+
+/* Header Section */
+.visit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.visit-title {
+  position: absolute;
+  left: 12px;
+  top: -3px;
+  width: 353px;
+  height: 62px;
+  color: #1d2430;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 57.6px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.visit-description {
+  position: absolute;
+  left: 972px;
+  top: 1px;
+  width: 432px;
+  height: 51px;
+  color: #535d6c;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Gallery Section */
+.visit-gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.experiences-container {
+  position: absolute;
+  left: 12px;
+  top: 130px;
+  width: calc(100% - 24px);
+  height: 451px;
+  overflow: hidden;
+}
+
+.experiences-track {
+  display: flex;
+  gap: 32px;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.experience-card {
+  flex: 0 0 451px;
+  width: 451px;
+  height: 451px;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 419px;
+  height: 82px;
+  background: #ffeb50;
+  border-radius: 0 32px 0 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.experience-title {
+  color: #1d2430;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 33.6px;
+  margin: 0;
+  max-width: 371px;
+}
+
+/* Visit Controls */
+.visit-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.visit-dots {
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.visit-dot {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgba(0, 0, 0, 0.2);
+  width: 8px;
+  height: 8px;
+}
+
+.visit-dot:nth-child(2) {
+  margin-left: 8px;
+}
+
+.visit-dot:nth-child(3) {
+  margin-left: 8px;
+}
+
+.visit-dot:nth-child(4) {
+  margin-left: 8px;
+}
+
+.visit-dot.active {
+  background: #336361;
+  width: 24px;
+  height: 8px;
+}
+
+.visit-dot:hover {
+  opacity: 0.8;
+}
+
+.visit-navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 16px;
+}
+
+.visit-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  border: 1px solid rgba(29, 36, 48, 0.4);
+  background: transparent;
+  color: #1d2430;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.visit-nav-btn:hover:not(:disabled) {
+  background: rgba(29, 36, 48, 0.05);
+  border-color: #1d2430;
+}
+
+.visit-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.visit-nav-prev {
+  left: 1316px;
+}
+
+.visit-nav-next {
+  left: 1380px;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .visit-section {
+    padding: 80px 120px;
+    height: auto;
+  }
+  
+  .visit-container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+  }
+  
+  .visit-header {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+  
+  .visit-title {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .visit-description {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .experiences-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .experience-card {
+    flex: 0 0 380px;
+    width: 380px;
+    height: 380px;
+  }
+  
+  .visit-controls {
+    position: relative;
+    margin-top: 32px;
+  }
+  
+  .visit-dots {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .visit-navigation {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .visit-section {
+    padding: 60px 80px;
+  }
+  
+  .visit-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .visit-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .experience-card {
+    flex: 0 0 350px;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .experiences-track {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .visit-section {
+    padding: 60px 40px;
+  }
+  
+  .visit-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .visit-description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .experience-card {
+    flex: 0 0 320px;
+    width: 320px;
+    height: 320px;
+  }
+  
+  .experiences-track {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .visit-section {
+    padding: 40px 24px;
+    height: auto;
+  }
+  
+  .visit-header {
+    margin-bottom: 40px;
+  }
+  
+  .visit-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .visit-description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .experience-card {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .experiences-track {
+    gap: 16px;
+  }
+  
+  .visit-controls {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .visit-navigation {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .visit-section {
+    padding: 32px 16px;
+  }
+  
+  .visit-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .visit-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .experience-card {
+    height: 280px;
+  }
+  
+  .experience-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .visit-nav-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 9px;
+  }
+  
+  .experience-overlay {
+    height: 70px;
+    padding: 20px;
+  }
+}
+
+/* Focus styles for accessibility */
+.visit-dot:focus,
+.visit-nav-btn:focus {
+  outline: 2px solid #336361;
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .experiences-track {
+    transition: none;
+  }
+  
+  .visit-dot,
+  .visit-nav-btn {
+    transition: none;
+  }
+}

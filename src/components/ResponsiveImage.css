@@ -1,0 +1,207 @@
+/* Responsive Image Component Styles */
+
+.responsive-image-container {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.responsive-image.loaded {
+  opacity: 1;
+}
+
+.responsive-image.error {
+  opacity: 0.5;
+}
+
+/* Different object-fit options */
+.responsive-image.cover {
+  object-fit: cover;
+}
+
+.responsive-image.contain {
+  object-fit: contain;
+}
+
+.responsive-image.fill {
+  object-fit: fill;
+}
+
+.responsive-image.scale-down {
+  object-fit: scale-down;
+}
+
+/* Placeholder and loading states */
+.image-placeholder {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+.image-error {
+  background: #f8f9fa;
+  border: 1px dashed #dee2e6;
+}
+
+/* Loading animation */
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Lazy loading optimization */
+.responsive-image[data-src] {
+  filter: blur(2px);
+  transition: filter 0.3s ease;
+}
+
+.responsive-image.loaded {
+  filter: none;
+}
+
+/* High performance optimizations */
+.responsive-image {
+  content-visibility: auto;
+  contain-intrinsic-size: 300px 200px;
+}
+
+/* Progressive enhancement for browsers with better image support */
+@supports (image-rendering: -webkit-optimize-contrast) {
+  .responsive-image {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+@supports (image-rendering: crisp-edges) {
+  .responsive-image {
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Retina display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .responsive-image {
+    image-rendering: auto;
+  }
+}
+
+/* Aspect ratio containers */
+.responsive-image-container.aspect-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.responsive-image-container.aspect-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+.responsive-image-container.aspect-1-1 {
+  aspect-ratio: 1 / 1;
+}
+
+.responsive-image-container.aspect-3-2 {
+  aspect-ratio: 3 / 2;
+}
+
+/* Fallback for browsers without aspect-ratio support */
+@supports not (aspect-ratio: 1) {
+  .responsive-image-container.aspect-16-9::before {
+    content: '';
+    display: block;
+    padding-bottom: 56.25%;
+  }
+  
+  .responsive-image-container.aspect-4-3::before {
+    content: '';
+    display: block;
+    padding-bottom: 75%;
+  }
+  
+  .responsive-image-container.aspect-1-1::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  .responsive-image-container.aspect-3-2::before {
+    content: '';
+    display: block;
+    padding-bottom: 66.67%;
+  }
+  
+  .responsive-image-container.aspect-16-9 .responsive-image,
+  .responsive-image-container.aspect-4-3 .responsive-image,
+  .responsive-image-container.aspect-1-1 .responsive-image,
+  .responsive-image-container.aspect-3-2 .responsive-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Hover effects */
+.responsive-image-container:hover .responsive-image {
+  transform: scale(1.02);
+}
+
+/* Focus states for accessibility */
+.responsive-image:focus {
+  outline: 2px solid #336361;
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .responsive-image,
+  .image-placeholder {
+    animation: none;
+    transition: none;
+  }
+  
+  .responsive-image-container:hover .responsive-image {
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .image-placeholder {
+    background: #ffffff;
+    border: 2px solid #000000;
+  }
+  
+  .image-error {
+    background: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+}
+
+/* Print styles */
+@media print {
+  .responsive-image {
+    break-inside: avoid;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  .image-placeholder,
+  .image-error {
+    display: none;
+  }
+}

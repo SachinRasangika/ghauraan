@@ -1,0 +1,433 @@
+/* Accessibility Utilities */
+
+/* Improved touch targets - minimum 44px x 44px for mobile */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Large touch target for important actions */
+.touch-target-large {
+  min-height: 56px;
+  min-width: 56px;
+}
+
+/* Extend clickable area without changing visual appearance */
+.touch-target-extended::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: 1;
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Show on focus for screen readers */
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background: #336361;
+  color: white;
+  border-radius: 4px;
+  z-index: 9999;
+}
+
+/* Enhanced focus indicators */
+.focus-visible {
+  outline: none;
+}
+
+.focus-visible:focus-visible {
+  outline: 2px solid #336361;
+  outline-offset: 2px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px rgba(51, 99, 97, 0.2);
+}
+
+/* High contrast focus for better visibility */
+@media (prefers-contrast: high) {
+  .focus-visible:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Skip links for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #336361;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 10000;
+  font-size: 14px;
+  font-weight: 500;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Accessible button styles */
+.btn-accessible {
+  background: transparent;
+  border: 2px solid currentColor;
+  color: inherit;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-accessible:hover {
+  background: rgba(51, 99, 97, 0.1);
+  transform: translateY(-1px);
+}
+
+.btn-accessible:active {
+  transform: translateY(0);
+}
+
+.btn-accessible:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-accessible:focus-visible {
+  outline: 2px solid #336361;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(51, 99, 97, 0.2);
+}
+
+/* Accessible form controls */
+.form-control-accessible {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px; /* Prevents zoom on iOS */
+  line-height: 1.5;
+  border: 2px solid #ced6e0;
+  border-radius: 8px;
+  background: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  min-height: 44px;
+}
+
+.form-control-accessible:focus {
+  outline: none;
+  border-color: #336361;
+  box-shadow: 0 0 0 3px rgba(51, 99, 97, 0.2);
+}
+
+.form-control-accessible:invalid {
+  border-color: #dc3545;
+}
+
+.form-control-accessible:invalid:focus {
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.2);
+}
+
+/* Accessible navigation */
+.nav-accessible {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px;
+}
+
+.nav-accessible li {
+  margin: 0;
+}
+
+.nav-accessible a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-accessible a:hover {
+  background: rgba(51, 99, 97, 0.1);
+}
+
+.nav-accessible a:focus-visible {
+  outline: 2px solid #336361;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(51, 99, 97, 0.2);
+}
+
+.nav-accessible a[aria-current="page"] {
+  background: rgba(51, 99, 97, 0.1);
+  font-weight: 600;
+}
+
+/* Accessible carousel/slider controls */
+.carousel-accessible {
+  position: relative;
+}
+
+.carousel-accessible .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #336361;
+  color: #336361;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.carousel-accessible .carousel-button:hover {
+  background: #336361;
+  color: white;
+}
+
+.carousel-accessible .carousel-button:focus-visible {
+  outline: 2px solid #336361;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(51, 99, 97, 0.2);
+}
+
+.carousel-accessible .carousel-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.carousel-accessible .carousel-prev {
+  left: 16px;
+}
+
+.carousel-accessible .carousel-next {
+  right: 16px;
+}
+
+/* Accessible pagination dots */
+.pagination-accessible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination-accessible button {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(51, 99, 97, 0.3);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.pagination-accessible button:hover {
+  background: rgba(51, 99, 97, 0.6);
+  transform: scale(1.2);
+}
+
+.pagination-accessible button:focus-visible {
+  outline: 2px solid #336361;
+  outline-offset: 2px;
+  transform: scale(1.2);
+}
+
+.pagination-accessible button[aria-current="true"] {
+  background: #336361;
+  width: 24px;
+  border-radius: 6px;
+}
+
+/* Accessible tooltips */
+.tooltip-accessible {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-accessible::after {
+  content: attr(aria-label);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.tooltip-accessible:hover::after,
+.tooltip-accessible:focus-visible::after {
+  opacity: 1;
+}
+
+/* Color contrast improvements */
+.high-contrast {
+  color: #000;
+  background: #fff;
+}
+
+@media (prefers-contrast: high) {
+  .auto-contrast {
+    color: CanvasText;
+    background: Canvas;
+    border-color: currentColor;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .respect-motion,
+  .respect-motion *,
+  .respect-motion *::before,
+  .respect-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus trap for modals */
+.focus-trap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.focus-trap-content {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile-specific accessibility improvements */
+@media (max-width: 768px) {
+  .touch-target {
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  .touch-target-large {
+    min-height: 56px;
+    min-width: 56px;
+  }
+  
+  .form-control-accessible {
+    font-size: 16px; /* Prevents zoom on iOS */
+    min-height: 48px;
+  }
+  
+  .btn-accessible {
+    min-height: 48px;
+    padding: 14px 20px;
+  }
+  
+  .nav-accessible a {
+    min-height: 48px;
+    padding: 14px 16px;
+  }
+}
+
+/* Voice control support */
+.voice-control [data-voice-command] {
+  position: relative;
+}
+
+.voice-control [data-voice-command]::before {
+  content: attr(data-voice-command);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 10px;
+  color: #666;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.voice-control:hover [data-voice-command]::before {
+  opacity: 1;
+}
+
+/* Print accessibility */
+@media print {
+  .skip-link,
+  .tooltip-accessible::after {
+    display: none;
+  }
+  
+  .sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    clip: auto;
+    overflow: visible;
+  }
+}

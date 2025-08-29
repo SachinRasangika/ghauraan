@@ -1,0 +1,817 @@
+/* Experiences Section */
+.experiences-section {
+  background: #003c3a;
+  color: #fff;
+}
+
+/* Top Section - One country, five experiences */
+.experiences-top {
+  padding: 182px 240px 0;
+  min-height: 697px;
+  position: relative;
+}
+
+.experiences-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.experiences-content {
+  flex: 0 0 600px;
+  padding-top: 0;
+}
+
+.experiences-title {
+  color: #fff;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 57.6px;
+  margin: 0 0 24px 0;
+  max-width: 369px;
+}
+
+.experiences-description {
+  color: #fff;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0 0 40px 0;
+  max-width: 556px;
+}
+
+.experiences-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12.82px 17px 14.22px 17px;
+  border-radius: 18px;
+  border: 1px solid rgba(226, 219, 207, 0.4);
+  color: #e2dbcf;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  width: 138px;
+  height: 48px;
+}
+
+.experiences-cta:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #e2dbcf;
+}
+
+.experiences-cta svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Map Section */
+.map-container {
+  flex: 0 0 696px;
+  position: relative;
+}
+
+.lithuania-map {
+  width: 696px;
+  height: 537px;
+  object-fit: contain;
+}
+
+.map-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 45px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.map-overlay:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+}
+
+.map-overlay svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Map overlay positions */
+.map-overlay-1 {
+  top: 247px;
+  left: 77px;
+}
+
+.map-overlay-2 {
+  top: 124px;
+  left: 153px;
+}
+
+.map-overlay-3 {
+  top: 177px;
+  left: 445px;
+}
+
+.map-overlay-4 {
+  top: 338px;
+  left: 264px;
+}
+
+.map-overlay-5 {
+  top: 414px;
+  left: 411px;
+}
+
+/* Bottom Section - Your own Lithuania - FIXED */
+.experiences-bottom {
+  display: flex;
+  width: 100%;
+  height: 836px;
+  padding: 0 240px 80px 240px;
+  flex-direction: column;
+  align-items: center;
+  gap: 79px;
+  background: #003c3a;
+  position: relative;
+}
+
+.experiences-divider {
+  width: 100%;
+  max-width: 1410px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.experiences-bottom .experiences-container {
+  width: 1440px;
+  height: 676px;
+  position: relative;
+  margin-top: 80px;
+  display: block;
+}
+
+.lithuania-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.lithuania-title {
+  position: absolute;
+  left: 12px;
+  top: -3px;
+  width: 407px;
+  height: 62px;
+  color: #fff;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 57.6px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lithuania-description {
+  position: absolute;
+  left: 972px;
+  top: 1px;
+  width: 453px;
+  height: 51px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Activities Gallery - FIXED */
+.lithuania-gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.activities-container {
+  position: absolute;
+  left: 12px;
+  top: 130px;
+  width: calc(100% - 24px);
+  height: 451px;
+  overflow: hidden;
+}
+
+.activities-track {
+  display: flex;
+  gap: 32px;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.activity-card {
+  flex: 0 0 451px;
+  width: 451px;
+  height: 451px;
+  position: relative;
+  overflow: hidden;
+}
+
+.activity-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.activity-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 419px;
+  background: #e1b9ff;
+  border-radius: 0 32px 0 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Different overlay heights based on content */
+.activity-card:nth-child(1) .activity-overlay,
+.activity-card:nth-child(2) .activity-overlay {
+  height: 115px;
+}
+
+.activity-card:nth-child(3) .activity-overlay,
+.activity-card:nth-child(4) .activity-overlay {
+  height: 82px;
+}
+
+.activity-title {
+  color: #1d2430;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 33.6px;
+  margin: 0;
+  max-width: 326px;
+}
+
+/* Lithuania Controls - FIXED */
+.lithuania-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.lithuania-dots {
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lithuania-dot {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.8);
+  width: 8px;
+  height: 8px;
+  opacity: 0.2;
+}
+
+.lithuania-dot:nth-child(2) {
+  margin-left: 8px;
+}
+
+.lithuania-dot:nth-child(3) {
+  margin-left: 8px;
+}
+
+.lithuania-dot:nth-child(4) {
+  margin-left: 8px;
+}
+
+.lithuania-dot.active {
+  background: #fff;
+  width: 24px;
+  height: 8px;
+  opacity: 1;
+}
+
+.lithuania-dot:hover {
+  opacity: 0.8;
+}
+
+.lithuania-navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 16px;
+}
+
+.lithuania-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  border: 1px solid rgba(226, 219, 207, 0.4);
+  background: transparent;
+  color: #e2dbcf;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lithuania-nav-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #e2dbcf;
+}
+
+.lithuania-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.lithuania-nav-prev {
+  left: 1316px;
+}
+
+.lithuania-nav-next {
+  left: 1380px;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .experiences-top {
+    padding: 120px 120px 0;
+  }
+  
+  .experiences-bottom {
+    padding: 0 120px 60px;
+  }
+  
+  .lithuania-map {
+    width: 600px;
+    height: 460px;
+  }
+  
+  .map-container {
+    flex: 0 0 600px;
+  }
+  
+  .experiences-bottom .experiences-container {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .lithuania-title {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+  }
+  
+  .lithuania-description {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+  }
+  
+  .lithuania-header {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .activities-container {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  
+  .activity-card {
+    flex: 0 0 380px;
+    width: 380px;
+    height: 380px;
+  }
+  
+  .lithuania-controls {
+    position: relative;
+    margin-top: 32px;
+  }
+  
+  .lithuania-dots {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .lithuania-navigation {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1440px) {
+  .experiences-top {
+    padding: 100px 80px 0;
+  }
+  
+  .experiences-bottom {
+    padding: 0 80px 60px;
+    height: auto;
+  }
+  
+  .experiences-container {
+    gap: 40px;
+  }
+  
+  .experiences-content {
+    flex: 0 0 500px;
+  }
+  
+  .experiences-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .lithuania-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .lithuania-map {
+    width: 500px;
+    height: 380px;
+  }
+  
+  .map-container {
+    flex: 0 0 500px;
+  }
+  
+  /* Adjust map overlay positions for smaller map */
+  .map-overlay-1 {
+    top: 178px;
+    left: 55px;
+  }
+  
+  .map-overlay-2 {
+    top: 89px;
+    left: 110px;
+  }
+  
+  .map-overlay-3 {
+    top: 127px;
+    left: 320px;
+  }
+  
+  .map-overlay-4 {
+    top: 243px;
+    left: 190px;
+  }
+  
+  .map-overlay-5 {
+    top: 298px;
+    left: 296px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .experiences-top {
+    padding: 80px 60px 0;
+  }
+  
+  .experiences-bottom {
+    padding: 0 60px 60px;
+  }
+  
+  .experiences-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .experiences-content {
+    flex: none;
+    max-width: 100%;
+  }
+  
+  .map-container {
+    flex: none;
+    align-self: center;
+  }
+  
+  .lithuania-header {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .lithuania-title {
+    flex: none;
+  }
+  
+  .lithuania-description {
+    flex: none;
+    max-width: 100%;
+  }
+  
+  .activity-card {
+    flex: 0 0 350px;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .activities-track {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .experiences-top {
+    padding: 60px 40px 0;
+  }
+  
+  .experiences-bottom {
+    padding: 0 40px 40px;
+  }
+  
+  .experiences-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .lithuania-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .experiences-description,
+  .lithuania-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .lithuania-map {
+    width: 400px;
+    height: 300px;
+  }
+  
+  .map-container {
+    flex: 0 0 400px;
+  }
+  
+  /* Adjust map overlay positions for tablet */
+  .map-overlay-1 {
+    top: 142px;
+    left: 44px;
+  }
+  
+  .map-overlay-2 {
+    top: 71px;
+    left: 88px;
+  }
+  
+  .map-overlay-3 {
+    top: 102px;
+    left: 256px;
+  }
+  
+  .map-overlay-4 {
+    top: 194px;
+    left: 152px;
+  }
+  
+  .map-overlay-5 {
+    top: 239px;
+    left: 237px;
+  }
+  
+  .activity-card {
+    flex: 0 0 320px;
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experiences-top {
+    padding: 40px 24px 0;
+  }
+  
+  .experiences-bottom {
+    padding: 0 24px 40px;
+  }
+  
+  .experiences-divider {
+    margin-bottom: 40px;
+  }
+  
+  .lithuania-header {
+    margin-bottom: 40px;
+  }
+  
+  .experiences-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .lithuania-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .experiences-description,
+  .lithuania-description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .experiences-cta {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .lithuania-map {
+    width: 100%;
+    max-width: 350px;
+    height: 260px;
+  }
+  
+  .map-container {
+    flex: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Adjust map overlay positions for mobile */
+  .map-overlay-1 {
+    top: 123px;
+    left: 38px;
+  }
+  
+  .map-overlay-2 {
+    top: 62px;
+    left: 77px;
+  }
+  
+  .map-overlay-3 {
+    top: 88px;
+    left: 224px;
+  }
+  
+  .map-overlay-4 {
+    top: 169px;
+    left: 133px;
+  }
+  
+  .map-overlay-5 {
+    top: 207px;
+    left: 207px;
+  }
+  
+  .activity-card {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .activities-track {
+    gap: 16px;
+  }
+  
+  .lithuania-controls {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .lithuania-navigation {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .experiences-top {
+    padding: 32px 16px 0;
+  }
+  
+  .experiences-bottom {
+    padding: 0 16px 32px;
+  }
+  
+  .experiences-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .lithuania-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .experiences-description,
+  .lithuania-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .experiences-cta {
+    font-size: 14px;
+    padding: 12px 16px;
+    height: 44px;
+  }
+  
+  .activity-card {
+    height: 280px;
+  }
+  
+  .activity-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .lithuania-nav-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 9px;
+  }
+  
+  .map-overlay {
+    width: 36px;
+    height: 35px;
+  }
+  
+  .map-overlay svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Focus styles for accessibility */
+.experiences-cta:focus,
+.map-overlay:focus,
+.lithuania-dot:focus,
+.lithuania-nav-btn:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .activities-track {
+    transition: none;
+  }
+  
+  .map-overlay,
+  .lithuania-dot,
+  .lithuania-nav-btn,
+  .experiences-cta {
+    transition: none;
+  }
+  
+  .map-overlay:hover {
+    transform: none;
+  }
+}

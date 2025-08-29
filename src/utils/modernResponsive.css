@@ -1,0 +1,349 @@
+/* Modern Responsive Design Utilities */
+/* Container Queries and Modern CSS Features */
+
+/* Container query support for modern browsers */
+@supports (container-type: inline-size) {
+  .container-responsive {
+    container-type: inline-size;
+  }
+
+  /* Marketing Section Container Queries */
+  .marketing-container {
+    container-type: inline-size;
+  }
+
+  @container (max-width: 600px) {
+    .marketing-header {
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .marketing-title {
+      font-size: clamp(24px, 5vw, 32px);
+    }
+  }
+
+  @container (max-width: 400px) {
+    .gallery-item {
+      flex: 0 0 100%;
+    }
+  }
+
+  /* Experiences Section Container Queries */
+  .experiences-container {
+    container-type: inline-size;
+  }
+
+  @container (max-width: 500px) {
+    .activity-card {
+      height: 250px;
+    }
+    
+    .activity-title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  /* Products Section Container Queries */
+  .products-container {
+    container-type: inline-size;
+  }
+
+  @container (max-width: 450px) {
+    .tab {
+      font-size: 12px;
+      padding: 6px 8px;
+    }
+  }
+}
+
+/* Modern CSS Grid with subgrid support where available */
+@supports (grid-template-rows: subgrid) {
+  .modern-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  
+  .modern-grid-item {
+    display: grid;
+    grid-template-rows: subgrid;
+  }
+}
+
+/* Intrinsic Web Design - Fluid Typography */
+.fluid-text-xl {
+  font-size: clamp(2rem, 4vw + 1rem, 4rem);
+  line-height: 1.2;
+}
+
+.fluid-text-lg {
+  font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
+  line-height: 1.3;
+}
+
+.fluid-text-md {
+  font-size: clamp(1rem, 2vw + 0.25rem, 1.5rem);
+  line-height: 1.4;
+}
+
+.fluid-text-sm {
+  font-size: clamp(0.875rem, 1.5vw + 0.125rem, 1.125rem);
+  line-height: 1.5;
+}
+
+/* Modern spacing using logical properties */
+.spacing-block-xs { block-size: 0.5rem; }
+.spacing-block-sm { block-size: 1rem; }
+.spacing-block-md { block-size: 1.5rem; }
+.spacing-block-lg { block-size: 2rem; }
+.spacing-block-xl { block-size: 3rem; }
+
+.spacing-inline-xs { inline-size: 0.5rem; }
+.spacing-inline-sm { inline-size: 1rem; }
+.spacing-inline-md { inline-size: 1.5rem; }
+.spacing-inline-lg { inline-size: 2rem; }
+.spacing-inline-xl { inline-size: 3rem; }
+
+/* Logical padding and margin */
+.padding-block-sm { padding-block: 1rem; }
+.padding-block-md { padding-block: 1.5rem; }
+.padding-block-lg { padding-block: 2rem; }
+
+.padding-inline-sm { padding-inline: 1rem; }
+.padding-inline-md { padding-inline: 1.5rem; }
+.padding-inline-lg { padding-inline: 2rem; }
+
+.margin-block-sm { margin-block: 1rem; }
+.margin-block-md { margin-block: 1.5rem; }
+.margin-block-lg { margin-block: 2rem; }
+
+.margin-inline-sm { margin-inline: 1rem; }
+.margin-inline-md { margin-inline: 1.5rem; }
+.margin-inline-lg { margin-inline: 2rem; }
+
+/* Modern aspect ratio support */
+.aspect-ratio-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+.aspect-ratio-1-1 {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-ratio-3-2 {
+  aspect-ratio: 3 / 2;
+}
+
+/* Fallback for browsers without aspect-ratio support */
+@supports not (aspect-ratio: 1) {
+  .aspect-ratio-16-9::before {
+    content: '';
+    display: block;
+    padding-bottom: 56.25%; /* 9/16 = 0.5625 */
+  }
+  
+  .aspect-ratio-4-3::before {
+    content: '';
+    display: block;
+    padding-bottom: 75%; /* 3/4 = 0.75 */
+  }
+  
+  .aspect-ratio-1-1::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  .aspect-ratio-3-2::before {
+    content: '';
+    display: block;
+    padding-bottom: 66.67%; /* 2/3 = 0.6667 */
+  }
+}
+
+/* Enhanced focus management for better accessibility */
+.focus-visible-only {
+  outline: none;
+}
+
+.focus-visible-only:focus-visible {
+  outline: 2px solid #336361;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Modern scrollbar styling */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(51, 99, 97, 0.3) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(51, 99, 97, 0.3);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(51, 99, 97, 0.5);
+}
+
+/* Modern CSS features for responsive images */
+.responsive-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.responsive-image-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* High resolution display support */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .high-res-bg {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"><rect width="1" height="1" fill="%23f8f9fa"/></svg>');
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .high-contrast-border {
+    border: 2px solid currentColor;
+  }
+  
+  .high-contrast-bg {
+    background: Canvas;
+    color: CanvasText;
+  }
+}
+
+/* Color scheme preferences */
+@media (prefers-color-scheme: dark) {
+  .adaptive-color {
+    color-scheme: dark;
+  }
+}
+
+/* Enhanced responsive breakpoints using modern units */
+.responsive-container {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+.responsive-container-sm {
+  width: min(100% - 1rem, 600px);
+  margin-inline: auto;
+}
+
+.responsive-container-lg {
+  width: min(100% - 4rem, 1400px);
+  margin-inline: auto;
+}
+
+/* Modern layout utilities */
+.stack > * + * {
+  margin-block-start: var(--stack-space, 1rem);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cluster-space, 1rem);
+  justify-content: var(--cluster-justify, flex-start);
+  align-items: var(--cluster-align, center);
+}
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sidebar > :first-child {
+  flex-basis: var(--sidebar-width, 20rem);
+  flex-grow: 1;
+}
+
+.sidebar > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: var(--sidebar-min-width, 50%);
+}
+
+/* Improved touch targets for mobile */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Enhanced interactive states */
+.interactive {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interactive:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.interactive:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern form styling */
+.modern-input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 16px; /* Prevents zoom on iOS */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modern-input:focus {
+  outline: none;
+  border-color: #336361;
+  box-shadow: 0 0 0 3px rgba(51, 99, 97, 0.1);
+}
+
+/* Utility for better line height */
+.leading-tight { line-height: 1.25; }
+.leading-snug { line-height: 1.375; }
+.leading-normal { line-height: 1.5; }
+.leading-relaxed { line-height: 1.625; }
+.leading-loose { line-height: 2; }
